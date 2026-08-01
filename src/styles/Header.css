@@ -1,0 +1,58 @@
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #2a3441;
+  margin-bottom: 30px;
+}
+
+.title-container h1 {
+  font-size: 2.2rem;
+  color: #ffcb05;
+  text-shadow: 2px 2px #3c5aa6;
+}
+
+.title-container p {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 15px;
+}
+
+.score-box {
+  background: #1e2630;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #2a3441;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-box span {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  text-transform: uppercase;
+}
+
+.score-box strong {
+  font-size: 1.5rem;
+  color: #48bb78;
+}
+
+.score-box.best strong {
+  color: #ecc94b;
+}
+
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
