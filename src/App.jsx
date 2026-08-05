@@ -76,8 +76,8 @@ export default function App() {
       }
     }
 
-    // Shuffle cards every time a card is clicked
-    setCards((prevCards) => shuffleArray(prevCards));
+    // ✅ FIX: Spread `prevCards` into a brand-new array `[...prevCards]` first!
+setCards((prevCards) => shuffleArray([...prevCards]));
   };
 
   return (
