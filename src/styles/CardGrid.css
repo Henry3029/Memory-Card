@@ -2,9 +2,10 @@ cardGrid.css
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem
+  padding-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .loading-container {
