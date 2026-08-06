@@ -1,7 +1,7 @@
 .game-header {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   padding: 20px 0;
   border-bottom: 2px solid #2a3441;
   margin-bottom: 30px;
@@ -31,7 +31,7 @@
   border: 1px solid #2a3441;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .score-box span {
@@ -53,6 +53,6 @@
   .game-header {
     flex-direction: column;
     gap: 15px;
-    text-align: left;
+    text-align: flex-start;
   }
 }
