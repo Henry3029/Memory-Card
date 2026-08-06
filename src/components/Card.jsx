@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({ id, name, image, handleClick }) {
+function Card({ id, name, image, onClick }) {
   return (
     <div 
       className="card" 
