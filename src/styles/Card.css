@@ -22,8 +22,8 @@
   width: 100%;
   aspect-ratio: 1;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image {
