@@ -77,7 +77,7 @@ export default function App() {
     }
 
     // ✅ FIX: Spread `prevCards` into a brand-new array `[...prevCards]` first!
-setCards((prevCards) => shuffleArray([...prevCards]));
+setCards((prevCards) => shuffleArray(prevCards));
   };
 
   return (
