@@ -45,11 +45,15 @@
 
 
 @media (min-width: 600px) {
-  grid-template-columns: repeat(2, 1fr);
+  .card-image-container {
+  width: 80px;
+  max-width: 80px;
+  }
 }
 
 @media (min-width: 1024px) {
-  grid-template-columns: repeat(4, 1fr);
+  .card-image-container {
   width: 85px;
   max-width: 85px;
+  }
 }
