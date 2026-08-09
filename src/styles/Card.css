@@ -44,3 +44,6 @@
 }
 
 
+@media (min-width: 600px) {
+  grid-template-columns: repeat(2, 1fr);
+}
