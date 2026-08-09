@@ -20,8 +20,8 @@
 }
 
 .card-image-container {
-  width: 70px;
-  max-width: 70px;
+  width: 40px;
+  max-width: 40px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
