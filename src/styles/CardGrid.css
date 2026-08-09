@@ -1,7 +1,7 @@
 .card-grid {
   display: grid;
   /* 90px allows 3 columns across on almost every mobile screen */
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   padding-bottom: 1rem;
   box-sizing: border-box;
@@ -29,4 +29,20 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* Larger 24px gap when there is more screen space */
+  }
 }
