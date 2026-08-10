@@ -7,9 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: border-box
   width: 100%;
+  max-width: 110px; /* Forces card to stay compact on mobile */
   margin: 0 auto;
+  overflow: hidden; /* Clips any rogue image boundaries */
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
