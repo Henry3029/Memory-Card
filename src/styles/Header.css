@@ -49,7 +49,7 @@
   color: #ecc94b;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 728px) {
   .game-header {
     flex-direction: column;
     gap: 15px;
