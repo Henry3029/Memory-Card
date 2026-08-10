@@ -1,6 +1,7 @@
 .card {
   background: #1e2630;
-  border: 1px solid #2a3441;
+  /* VISIBLE BORDER: Brightened border color + solid outline */
+  border: 2px solid #3f4e60; 
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
@@ -9,57 +10,83 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  max-width: 110px; /* Forces card to stay compact on mobile */
+  max-width: 130px; /* Ensures 2-column mobile layout remains tight */
   margin: 0 auto;
-  overflow: hidden; /* Clips any rogue image boundaries */
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  border-color: #ffcb05;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border-color: #ffcb05; /* Glow yellow on hover */
 }
 
 .card-image-container {
   width: 100%;
-  max-width: 80px;
-  height: 80px;
+  max-width: 75px;
+  height: 75px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .card-image {
   max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
-  max-height: 100%;  /* ✅ Ensures image stays within square container */
   object-fit: contain;
   display: block;
 }
 
 .card-title {
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: 0.75rem;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: #e2e8f0;
-  text-align: start;
+  text-align: center;
   word-break: break-word;
 }
-
-
+/* Desktop Card Sizing Upgrades */
 @media (min-width: 600px) {
-  .card-image-container {
-  width: 80px;
-  max-width: 80px;
+  .card {
+    max-width: 150px;
+    padding: 12px;
   }
+
+  .card-image-container {
+    max-width: 95px;
+    height: 95px;
+  }
+
+  .card-title {
+    font-size: 0.85rem;
+  }
+  }
+/* ==========================================================================
+   5. LOADING SPINNER
+   ========================================================================== */
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }
 
-@media (min-width: 1024px) {
-  .card-image-container {
-  width: 85px;
-  max-width: 85px;
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #2a3441;
+  border-top: 5px solid #ffcb05;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
   }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
