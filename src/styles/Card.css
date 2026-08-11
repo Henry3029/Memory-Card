@@ -48,22 +48,26 @@
   text-align: center;
   word-break: break-word;
 }
-/* Desktop Card Sizing Upgrades */
 @media (min-width: 600px) {
   .card {
-    max-width: 150px;
-    padding: 12px;
+    width: 170px; /* 👈 New fixed width for tablets */
   }
 
   .card-image-container {
-    max-width: 95px;
-    height: 95px;
+    height: 110px; /* Scaling up the artwork height too */
+  }
+}
+
+/* DESKTOP VIEWPORT (1024px and up) */
+@media (min-width: 1024px) {
+  .card {
+    width: 200px; /* 👈 New fixed width for desktop */
   }
 
-  .card-title {
-    font-size: 0.85rem;
+  .card-image-container {
+    height: 130px;
   }
-  }
+}
 /* ==========================================================================
    5. LOADING SPINNER
    ========================================================================== */
