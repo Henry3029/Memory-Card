@@ -1,19 +1,17 @@
 .card {
   background: #1e2630;
   /* VISIBLE BORDER: Brightened border color + solid outline */
-  border: 2px solid #3f4e60; 
-  border-radius: 12px;
-  padding: 10px;
+  border: 1px solid #3f4e60; 
+  border-radius: 10px;
+  padding: 8px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  max-width: 130px; /* Ensures 2-column mobile layout remains tight */
   margin: 0 auto;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
@@ -24,16 +22,15 @@
 
 .card-image-container {
   width: 100%;
-  max-width: 75px;
-  height: 75px;
+  height: 80px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card-image {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
   width: auto;
   height: auto;
   object-fit: contain;
