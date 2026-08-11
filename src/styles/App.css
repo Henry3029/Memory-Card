@@ -36,6 +36,12 @@ body {
 /* Tablet & Desktop: Give the layout more breathing room */
 @media (min-width: 600px) {
   .app {
+    padding: 16x;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
     padding: 24px;
   }
 }
