@@ -51,7 +51,7 @@
 }
 
 /* Desktop Header Adjustments */
-@media (min-width: 728px) {
+@media (min-width: 768px) {
   .game-header {
     flex-direction: row;
     justify-content: space-between;

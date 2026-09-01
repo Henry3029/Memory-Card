@@ -1,47 +1,23 @@
-/* ==========================================================================
-   GLOBAL RESET & BASE STYLES
-   ========================================================================== */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-  background-color: #12181f;
-  color: #ffffff;
-  min-height: 100vh;
-}
-
 .app {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   /* Mobile-first: Tighter 12px padding gives more room for the 2-column grid */
-  padding: 12px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 /* Tablet & Desktop: Give the layout more breathing room */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .app {
-    padding: 16x;
+    padding: 1rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .app {
-    padding: 24px;
+    padding: 2rem;
   }
 }
