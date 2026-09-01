@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column; /* Mobile default: Stacked layout */
   align-items: center;
-  gap: 15px;
-  padding: 20px 0;
+  gap: 1rem
+  padding: 1.25rem 0;
   border-bottom: 2px solid #3f4e60;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -23,12 +23,12 @@
 
 .scoreboard {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .score-box {
   background: #1e2630;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border-radius: 8px;
   border: 2px solid #3f4e60; /* Clear, visible border */
   display: flex;
@@ -56,5 +56,13 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    min-height: 320px;
+    padding: 3rem 4rem;
+  }
+    }
+    
+    @media (min-width: 768px) {
+  .game-header {
+    min-height: 380px;
   }
     }

@@ -12,12 +12,12 @@
 /* Tablet & Desktop: Give the layout more breathing room */
 @media (min-width: 768px) {
   .app {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 @media (min-width: 1200px) {
   .app {
-    padding: 2rem;
+    padding: 3rem;
   }
 }
