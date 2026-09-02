@@ -1,15 +1,15 @@
 import React from 'react';
 
-function Card({ id, name, image, onClick }) {
+function Card({ card, onCardClick }) {
   return (
     <div 
       className="card" 
-      onClick={() => handleClick(id)}
+      onClick={() => onCardClick(card.id)}
     >
       <div className="card-image-container">
-        <img src={image} alt={name} className="card-image" />
+        <img src={card.image} alt={card.name} className="card-image" />
       </div>
-      <p className="card-title">{name}</p>
+      <p className="card-title">{card.name}</p>
     </div>
   );
 }

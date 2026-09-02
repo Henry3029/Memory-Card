@@ -17,10 +17,8 @@ export default function CardGrid({ cards, onCardClick, loading }) {
       {cards.map((card) => (
         <Card
           key={card.id}
-          id={card.id}
-          name={card.name}
-          image={card.image}
-          onClick={onCardClick}
+          card={card}
+          onCardClick={onCardClick}
         />
       ))}
     </main>
