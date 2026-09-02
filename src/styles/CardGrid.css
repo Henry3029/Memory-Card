@@ -1,27 +1,30 @@
+/* Mobile First Base: 2 Columns for narrow screens */
 .card-grid {
   display: grid;
-  /* Default 6 columns for large screens */
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
 }
 
-
-@media (max-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* LARGE DESKTOP (4 columns) */
-@media (max-width: 768px) {
+/* Tablet (768px and up): 3 Columns */
+@media (min-width: 600px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
 }
 
-@media (max-width: 480px) {
+/* Medium Desktop (900px and up): 4 Columns */
+@media (min-width: 900px) {
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* 6 rows, 2 columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Large Desktop (1200px and up): 6 Columns */
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
