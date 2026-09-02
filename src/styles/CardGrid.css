@@ -1,23 +1,27 @@
 .card-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  /* Default 6 columns for large screens */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-content: center;
 }
 
-/* TABLET (2 columns) */
-@media (min-width: 768px) {
+
+@media (max-width: 1024px) {
   .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-
 /* LARGE DESKTOP (4 columns) */
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 6 rows, 2 columns */
   }
 }

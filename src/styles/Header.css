@@ -1,19 +1,15 @@
 .game-header {
   display: flex;
-  flex-direction: column; /* Mobile default: Stacked layout */
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem
-  padding: 1.25rem 0;
-  border-bottom: 2px solid #3f4e60;
-  margin-bottom: 2.5rem;
-  text-align: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .title-container h1 {
-  font-size: 2.2rem;
-  color: #ffcb05;
-  text-shadow: 2px 2px #3c5aa6;
-  margin: 0;
+  font-size: 2.5rem;
+  color: #ffcb05; /* Pokemon Yellow */
 }
 .title-container p {
   color: #a0aec0;
@@ -23,17 +19,16 @@
 
 .scoreboard {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .score-box {
-  background: #1e2630;
-  padding: 0.625rem 1.25rem;
+  background: #2a2a2a;
+  padding: 10px 20px;
   border-radius: 8px;
-  border: 2px solid #3f4e60; /* Clear, visible border */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid #444;
 }
 .score-box span {
   font-size: 0.8rem;
@@ -50,19 +45,11 @@
   color: #ecc94b;
 }
 
-/* Desktop Header Adjustments */
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
   .game-header {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    min-height: 320px;
-    padding: 3rem 4rem;
+    flex-direction: column;
+    text-align: center;
   }
     }
     
-    @media (min-width: 768px) {
-  .game-header {
-    min-height: 380px;
-  }
-    }

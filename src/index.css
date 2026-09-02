@@ -28,14 +28,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-	font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-  background-color: #ffffff;
-  color: #1e293b;
-  line-height: 1.5;
-  overflow-x: hidden; 
+background-color: #121212;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,18 +66,5 @@ code {
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1200px) {
-  :root {
-    font-size: 24px;
   }
 }
